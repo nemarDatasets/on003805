@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003805-blue)](https://doi.org/10.82901/nemar.on003805)
+
 > Introduction
 This experiment was designed to study the effects of different sensory modalities (auditory, visual, and audio-visual) on brain entrainment. The EEG data was collected from a young healthy volunteer (23 years old male). Recently, gamma entrainment based on individual (auditory or visual) sensory stimulation as well as simultaneous auditory and visual stimulation have been proposed and shown effective in improving several symptoms of Alzheimer's Diseases (AD) in mice and humans. The aim of this study is to investigate the effect of different modalities in producing synchronized brain oscillations. The task is composed of three epochs of auditory, visual, and audio-visual stimulations respectively, each lasting for 40sec in one session.  
 
