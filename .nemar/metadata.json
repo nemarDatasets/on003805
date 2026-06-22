@@ -1,29 +1,78 @@
 {
   "version": "2.0",
-  "dataset_id": "on003805",
-  "source": "openneuro",
-  "source_id": "ds003805",
+  "pipeline_stage": "enriched",
   "title": "Multisensory Gamma Entrainment",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Mojtaba Lahijanian": {},
     "Mohammad Javad Sedghizadeh": {},
     "Hamid Aghajan": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003805.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003805",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003805",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.0.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt"
+  ],
+  "description": "This dataset contains EEG recordings from a single healthy participant (23 years old, male) during multisensory stimulation designed to investigate gamma-band brain entrainment. The study examined three distinct sensory conditions: auditory stimulation (40 Hz modulated 5 kHz tone), visual stimulation (20 Hz flickering light), and combined audio-visual stimulation, each lasting 40 seconds. The research aims to characterize how different sensory modalities drive synchronized brain oscillations, with potential implications for understanding sensory-driven gamma entrainment mechanisms relevant to neurodegenerative diseases such as Alzheimer's disease. Note: This is a single-subject study.",
+  "methods_description": "EEG data were recorded from 19 monopolar channels using the standard 10/20 system referenced to earlobes at 500 Hz sampling rate with electrode impedance maintained below 20 kOhm. Auditory stimulation consisted of a 40 Hz amplitude-modulated 5 kHz carrier tone (4% duty cycle) delivered via speakers at 50 cm distance. Visual stimulation was a 20 Hz flickering white LED array at 50 cm distance with 50% duty cycle. Preprocessing followed Makoto's pipeline including highpass filtering (>1 Hz), line noise removal, bad channel rejection and interpolation, average re-referencing, Artifact Subspace Reconstruction, independent component analysis, dipole fitting, and bad dipole rejection using EEGLab.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "gamma oscillations"
+    },
+    {
+      "term": "sensory stimulation"
+    },
+    {
+      "term": "brain entrainment"
+    },
+    {
+      "term": "multisensory integration"
+    },
+    {
+      "term": "auditory-visual stimulation"
+    },
+    {
+      "term": "Alzheimer's disease"
+    },
+    {
+      "term": "EEGLab"
+    },
+    {
+      "term": "preprocessing pipeline"
+    },
+    {
+      "term": "single-subject study"
+    }
+  ],
+  "source_hash": "89aa4ac80d078c61eabf2422054414e403b34f7205e2bb1ec9a7ebd034ec76c6"
 }
