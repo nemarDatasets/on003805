@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Multisensory Gamma Entrainment",
-  "description": "This dataset comprises EEG recordings from a single healthy participant (23-year-old male) exposed to multisensory stimulation at gamma frequencies (40Hz). The experiment investigates brain entrainment responses to auditory (5kHz amplitude-modulated at 40Hz), visual (20Hz flickering white light from LED array), and combined audio-visual stimulation, each presented for 40 seconds. The 20Hz visual stimulation is designed to drive 40Hz brain oscillations through harmonic frequencies. The study aims to characterize synchronized brain oscillations across different sensory modalities, with potential implications for understanding gamma entrainment mechanisms relevant to neurodegenerative diseases such as Alzheimer's disease.",
-  "methods_description": "EEG data were recorded from 19 monopolar channels using the standard 10/20 system referenced to earlobes at 500Hz sampling rate with electrode impedance maintained below 20kOhm. Auditory stimulation consisted of a 5kHz carrier tone amplitude-modulated with a 40Hz rectangular wave (4% duty cycle, 1ms on per 25ms cycle). Visual stimulation was a 20Hz flickering white light produced by an LED array at 50cm distance with 50% duty cycle, designed to drive 40Hz brain oscillations through harmonic frequencies. Preprocessing followed Makoto's pipeline including highpass filtering (>1Hz), line noise removal, bad channel rejection and interpolation, average re-referencing, Artifact Subspace Reconstruction (ASR), re-referencing to average, independent component analysis (ICA) for source separation, dipole fitting, and rejection of bad dipoles. All preprocessing was performed using EEGLab MATLAB toolbox.",
+  "description": "EEG dataset from a single healthy young adult examining how auditory, visual, and combined audio-visual stimulation entrain gamma-band brain oscillations. Gamma entrainment has been proposed as a therapeutic approach for Alzheimer's disease symptoms. The session consists of three 40-second stimulation epochs, using a 40 Hz amplitude-modulated auditory tone, a 20 Hz LED flicker, and both together.",
+  "methods_description": "EEG was recorded from 19 monopolar channels in the 10/20 system, referenced to the earlobes, at a 500 Hz sampling rate, with impedance kept under 20 kOhm. The auditory stimulus was a 5 kHz carrier tone modulated by a 40 Hz rectangular wave with a 4% duty cycle. The visual stimulus was a 20 Hz white LED flicker with a 50% duty cycle. Preprocessing used EEGLAB and included 1 Hz high-pass filtering, line noise removal, bad channel rejection and interpolation, average re-referencing, Artifact Subspace Reconstruction, ICA, and dipole fitting.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,31 +19,21 @@
       "term": "gamma entrainment"
     },
     {
-      "term": "multisensory integration"
-    },
-    {
       "term": "auditory stimulation"
     },
     {
       "term": "visual stimulation"
     },
     {
-      "term": "brain oscillations"
+      "term": "audio-visual stimulation"
     },
     {
-      "term": "independent component analysis"
+      "term": "Alzheimer Disease",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000544"
     },
     {
-      "term": "preprocessing"
-    },
-    {
-      "term": "Artifact Subspace Reconstruction"
-    },
-    {
-      "term": "Alzheimer's disease"
-    },
-    {
-      "term": "neurodegenerative disease"
+      "term": "40 Hz oscillations"
     }
   ],
   "related_identifiers": [
@@ -53,14 +43,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003805",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003805.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003805",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -68,7 +58,7 @@
     "eeg"
   ],
   "sizes": [
-    "17.8 MB (3 files)"
+    "16.95 MB (3 files)"
   ],
   "formats": [
     ".json",
